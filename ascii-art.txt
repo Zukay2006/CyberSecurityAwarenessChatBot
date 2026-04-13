@@ -1,0 +1,82 @@
+﻿    static void ShowHeader()
+    {
+        string[] wavingBot =
+        { // this is the logo for the chatbot
+    "   (^_^)/    ",
+    "    /|       ",
+    "   / |       ",
+    "    / \\      ",
+    "  chatbuddy logo "
+};
+
+        string[] text =
+        {
+    "==============================================",
+    "      CYBERSECURITY AWARENESS BOT",
+    "=============================================="
+};
+
+        int maxLines = Math.Max(wavingBot.Length, text.Length);
+
+        for (int i = 0; i < maxLines; i++)
+        {
+            // Orange logo for the logo to stand out
+            Console.ForegroundColor = ConsoleColor.DarkYellow;
+            string left = i < wavingBot.Length ? wavingBot[i] : "               ";
+            Console.Write(left + "   ");
+
+            // Green header to be different from the logo
+            Console.ForegroundColor = ConsoleColor.Green;
+            string right = i < text.Length ? text[i] : "";
+            Console.WriteLine(right);
+        }
+
+        Console.ResetColor();
+        Console.WriteLine();
+    }
+    static void SlideInChatBuddy()
+    {
+        string[] bot =
+        {
+            " [---] ",
+            " (o o) ",
+            " / | \\ ",
+            "  / \\  "
+        };
+
+        for (int pos = 0; pos <= 20; pos++)
+        {
+            Console.Clear();
+            ShowHeader();
+
+            foreach (string line in bot)
+                Console.WriteLine(new string(' ', pos) + line);
+
+            Thread.Sleep(50);
+        }
+    }
+
+    static void SlideOutChatBuddy()
+    {
+        string[] bot =
+        {
+            " [---] ",
+            " (o o) ",
+            " / | \\ ",
+            "  / \\  "
+        };
+
+        for (int pos = 20; pos >= 0; pos--)
+        {
+            Console.Clear();
+            ShowHeader();
+
+            foreach (string line in bot)
+                Console.WriteLine(new string(' ', pos) + line);
+
+            Thread.Sleep(50);
+        }
+
+        Console.Clear();
+        ShowHeader();
+    } 

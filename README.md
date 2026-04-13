@@ -18,11 +18,20 @@ Cyber Security Awareness Chatbot created in C#.
    https://youtu.be/THOfM-_5c_A?feature=shared
 
 # HOW TO RUN THE CODE OR PROGRAM:
-  1. Open CyberSecurityBot.sln in Visual Studio
-  2. Build the project
-  3. Run the program
-  4. Ensure welcome.wav is in the project folder
-
+1. Clone the repository:
+   git clone <repo-link>
+2. Open the solution file:
+   CyberSecurityBot.sln in Visual Studio
+3. Restore dependencies (if needed):
+   dotnet restore
+4. Build the project:
+   dotnet build
+5. Run the application:
+   Press Start (F5) in Visual Studio
+6. Ensure the following files are in the project directory:
+   - welcome.wav (voice greeting)
+   - ascii-art.txt (ASCII artwork)
+     
 # LEARNING OUTCOMES:
   This project demonstrates:
 - Basic C# programming structure

@@ -30,3 +30,7 @@ Cyber Security Awareness Chatbot created in C#.
 - User input handling
 - Console UI design and formatting
 - Simple chatbot logic using condition checks
+
+# CI build success
+Please kindly click the link in order to see the screenshot succesful CI workflow build https://github.com/Zukay2006/CyberSecurityAwarenessChatBot/blob/main/CL%20workflow%20success.png
+
